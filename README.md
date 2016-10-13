@@ -1,0 +1,2 @@
+# BagelApp
+DETTE ER DEN ENDELIGE FIL!
