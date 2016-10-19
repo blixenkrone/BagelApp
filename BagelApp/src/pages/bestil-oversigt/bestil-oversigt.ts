@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
+  Theis 1
 */
 
 @Component({
