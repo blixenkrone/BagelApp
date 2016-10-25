@@ -27,9 +27,8 @@ export class BestilOversigt {
     console.log('Hello BestilOversigt Page');
   }
 
+//Start kode her
 
-
-  //Start kode her
 
 
 //Slut kode her
