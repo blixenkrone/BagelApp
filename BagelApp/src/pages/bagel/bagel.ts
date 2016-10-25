@@ -7,10 +7,13 @@ import { NavController } from 'ionic-angular';
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
+
 @Component({
   selector: 'page-bagel',
   templateUrl: 'bagel.html'
 })
+
+
 export class BagelPage {
 
   constructor(public navCtrl: NavController) {}

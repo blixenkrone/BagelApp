@@ -8,6 +8,7 @@ import { BestilOversigt } from '../bestil-oversigt/bestil-oversigt';
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
+  Simon1
 */
 @Component({
   selector: 'page-butik',
