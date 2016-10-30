@@ -14,10 +14,10 @@ import { Bagel } from '../../models/bagel';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-    //this.navCtrl = navCtrl;
 
     this.myBagel = new Bagel();
-    this.myBagel.pris = 10;
+    this.myBagel.pris = 15;
+    
     
   }
   public myBagel : Bagel;

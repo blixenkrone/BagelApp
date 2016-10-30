@@ -24,12 +24,10 @@ export class Animation {
 
   public pushPage(){
     this.navCtrl.push(AddOrder, {
-      
+
     });
   }
 
-
-  
   //kode hertil
 
   ionViewDidLoad() {
