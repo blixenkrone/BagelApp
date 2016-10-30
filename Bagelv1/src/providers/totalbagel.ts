@@ -5,13 +5,13 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class TotalBagel {
 
-  list: Array<Object> = [];
+  totalBagelList: Array<Object> = [];
 
   constructor() {}
 
  getBagel() {
-    console.log("Dette er Arrayet fra serviceBagel: " + this.list);
-  } 
+    console.log("Dette er Arrayet fra serviceBagel: " + this.totalBagelList);
+  }
 
 }
 
