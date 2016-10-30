@@ -81211,13 +81211,15 @@ var __metadata$4 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var TotalBagel = (function () {
-    function TotalBagel(http) {
-        this.http = http;
-        console.log('Hello Totalbagel Provider');
+    function TotalBagel() {
+        this.totalBagelList = [];
     }
+    TotalBagel.prototype.getBagel = function () {
+        console.log("Dette er Arrayet fra serviceBagel: " + this.totalBagelList);
+    };
     TotalBagel = __decorate$110([
         Injectable(), 
-        __metadata$4('design:paramtypes', [Http])
+        __metadata$4('design:paramtypes', [])
     ], TotalBagel);
     return TotalBagel;
 }());
