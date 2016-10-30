@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class Totalbagel {
+export class TotalBagel {
 
   constructor(public http: Http) {
     console.log('Hello Totalbagel Provider');
