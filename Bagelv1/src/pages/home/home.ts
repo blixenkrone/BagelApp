@@ -15,9 +15,3 @@ export class HomePage {
   }
 
 }
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 68a441f1671a8efa0704ff75310103f47507d176

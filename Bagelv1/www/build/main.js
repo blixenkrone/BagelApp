@@ -81036,31 +81036,6 @@ setTimeout(function () {
     }
 }, DEVICE_READY_TIMEOUT);
 
-var __decorate$109 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var PickBread = (function () {
-    function PickBread(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    PickBread.prototype.ionViewDidLoad = function () {
-        console.log('Hello PickBread Page');
-    };
-    PickBread = __decorate$109([
-        Component({
-            selector: 'page-pick-bread',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-bread/pick-bread.html"*/'<!--\n  Generated template for the PickBread page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickBread</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-bread/pick-bread.html"*/
-        }), 
-        __metadata$3('design:paramtypes', [NavController])
-    ], PickBread);
-    return PickBread;
-}());
-
 var __decorate$108 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81074,16 +81049,9 @@ var HomePage = (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    HomePage.prototype.makeBagel = function () {
-        this.navCtrl.push(PickBread, {});
-    };
     HomePage = __decorate$108([
         Component({
-<<<<<<< HEAD
             selector: 'page-home',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  The world is your oyster.\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n  </p>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/home/home.html"*/
-=======
-            selector: 'page-home',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Velkommen\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  Velkommen til bagel-appen.\n  Klik på denne knap, for at starte produktionen:\n\n  <button ion-button block (click)="makeBagel()"> Lav en bagel </button>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/
->>>>>>> 68a441f1671a8efa0704ff75310103f47507d176
         }), 
         __metadata$2('design:paramtypes', [NavController])
     ], HomePage);
@@ -81213,6 +81181,26 @@ var Observable_1$4 = Observable_1$1;
 var map_1 = map_1$1;
 Observable_1$4.Observable.prototype.map = map_1.map;
 
+var __decorate$109 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Fillings = (function () {
+    function Fillings(name) {
+        this.name = name;
+    }
+    Fillings = __decorate$109([
+        Injectable(), 
+        __metadata$3('design:paramtypes', [String])
+    ], Fillings);
+    return Fillings;
+}());
+
 var __decorate$110 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81222,15 +81210,18 @@ var __decorate$110 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$4 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var Fillings = (function () {
-    function Fillings(name) {
-        this.name = name;
+var TotalBagel = (function () {
+    function TotalBagel() {
+        this.totalBagelList = [];
     }
-    Fillings = __decorate$110([
+    TotalBagel.prototype.getBagel = function () {
+        console.log("Dette er Arrayet fra serviceBagel: " + this.totalBagelList);
+    };
+    TotalBagel = __decorate$110([
         Injectable(), 
-        __metadata$4('design:paramtypes', [String])
-    ], Fillings);
-    return Fillings;
+        __metadata$4('design:paramtypes', [])
+    ], TotalBagel);
+    return TotalBagel;
 }());
 
 var __decorate$111 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -81240,29 +81231,6 @@ var __decorate$111 = (undefined && undefined.__decorate) || function (decorators
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var TotalBagel = (function () {
-    function TotalBagel() {
-        this.totalBagelList = [];
-    }
-    TotalBagel.prototype.getBagel = function () {
-        console.log("Dette er Arrayet fra serviceBagel: " + this.totalBagelList);
-    };
-    TotalBagel = __decorate$111([
-        Injectable(), 
-        __metadata$5('design:paramtypes', [])
-    ], TotalBagel);
-    return TotalBagel;
-}());
-
-var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /*
@@ -81278,20 +81246,15 @@ var Bagel = (function () {
     Bagel.prototype.ionViewDidLoad = function () {
         console.log('Hello Bagel Page');
     };
-    Bagel = __decorate$112([
+    Bagel = __decorate$111([
         Component({
-<<<<<<< HEAD
             selector: 'page-bagel',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/'<!--\n  Generated template for the Bagel page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>bagel</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/
-=======
-            selector: 'page-bagel',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/'<!--\n  Generated template for the Bagel page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>bagel</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/
->>>>>>> 68a441f1671a8efa0704ff75310103f47507d176
         }), 
-        __metadata$6('design:paramtypes', [NavController])
+        __metadata$5('design:paramtypes', [NavController])
     ], Bagel);
     return Bagel;
 }());
 
-<<<<<<< HEAD
 var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81317,8 +81280,6 @@ var PickBread = (function () {
     return PickBread;
 }());
 
-=======
->>>>>>> 68a441f1671a8efa0704ff75310103f47507d176
 var __decorate$113 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81343,11 +81304,7 @@ var PickCreamCheese = (function () {
     };
     PickCreamCheese = __decorate$113([
         Component({
-<<<<<<< HEAD
             selector: 'page-pick-cream-cheese',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/'<!--\n  Generated template for the PickCreamCheese page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickCreamCheese</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/
-=======
-            selector: 'page-pick-cream-cheese',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/'<!--\n  Generated template for the PickCreamCheese page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickCreamCheese</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/
->>>>>>> 68a441f1671a8efa0704ff75310103f47507d176
         }), 
         __metadata$7('design:paramtypes', [NavController])
     ], PickCreamCheese);
@@ -81378,11 +81335,7 @@ var PickDressing = (function () {
     };
     PickDressing = __decorate$114([
         Component({
-<<<<<<< HEAD
             selector: 'page-pick-dressing',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/'<!--\n  Generated template for the PickDressing page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickDressing</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/
-=======
-            selector: 'page-pick-dressing',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/'<!--\n  Generated template for the PickDressing page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickDressing</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/
->>>>>>> 68a441f1671a8efa0704ff75310103f47507d176
         }), 
         __metadata$8('design:paramtypes', [NavController])
     ], PickDressing);
@@ -81413,11 +81366,7 @@ var PickMeat = (function () {
     };
     PickMeat = __decorate$115([
         Component({
-<<<<<<< HEAD
             selector: 'page-pick-meat',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/'<!--\n  Generated template for the PickMeat page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickMeat</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/
-=======
-            selector: 'page-pick-meat',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/'<!--\n  Generated template for the PickMeat page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickMeat</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/
->>>>>>> 68a441f1671a8efa0704ff75310103f47507d176
         }), 
         __metadata$9('design:paramtypes', [NavController])
     ], PickMeat);
@@ -81448,11 +81397,7 @@ var PickSalad = (function () {
     };
     PickSalad = __decorate$116([
         Component({
-<<<<<<< HEAD
             selector: 'page-pick-salad',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/'<!--\n  Generated template for the PickSalad page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickSalad</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/
-=======
-            selector: 'page-pick-salad',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/'<!--\n  Generated template for the PickSalad page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickSalad</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/
->>>>>>> 68a441f1671a8efa0704ff75310103f47507d176
         }), 
         __metadata$10('design:paramtypes', [NavController])
     ], PickSalad);
