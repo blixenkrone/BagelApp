@@ -3,7 +3,7 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Fillings } from '../providers/fillings';
-import { TotalBagels } from '../providers/totalbagels';
+import { TotalBagel } from '../providers/totalbagel';
 
 @NgModule({
   declarations: [
@@ -18,6 +18,6 @@ import { TotalBagels } from '../providers/totalbagels';
     MyApp,
     HomePage
   ],
-  providers: [Fillings, TotalBagels]
+  providers: [Fillings, TotalBagel]
 })
 export class AppModule {}
