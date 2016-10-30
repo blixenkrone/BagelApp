@@ -12,10 +12,11 @@ export class HomePage {
     
   }
 
-  makeBagels(){
+  makeBagel(){
     this.navCtrl.push(PickBread, {
       //Intet at føre med?
     });
   }
 
 }
+
