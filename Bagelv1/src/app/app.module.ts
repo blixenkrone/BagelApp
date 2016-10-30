@@ -3,12 +3,24 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Fillings } from '../providers/fillings';
-import { TotalBagel } from '../providers/totalbagel';
+import { TotalBagels } from '../providers/totalbagels';
+import { bagel } from '../pages/bagel'
+import { pickBread } from '../pages/pickBread'
+import { pickCreamCheese } from '../pages/pickCreamCheese'
+import { pickDressing } from '../pages/pickDressing'
+import { pickMeat } from '../pages/pickMeat'
+import { pickSalad } from '../pages/pickSalad'
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    bagel,
+    pickBread,
+    pickCreamCheese,
+    pickDressing,
+    pickMeat,
+    pickSalad
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -16,8 +28,13 @@ import { TotalBagel } from '../providers/totalbagel';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    pickBread,
+    pickCreamCheese,
+    pickDressing,
+    pickMeat,
+    pickSalad
   ],
-  providers: [Fillings, TotalBagel]
+  providers: [Fillings, TotalBagels]
 })
 export class AppModule {}
