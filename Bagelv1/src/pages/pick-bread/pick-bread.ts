@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { Fillings } from '../../providers/fillings';
+
 
 @Component({
   selector: 'page-pick-bread',
