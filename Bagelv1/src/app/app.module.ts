@@ -9,7 +9,7 @@ import { pickBread } from '../pages/pickBread'
 import { pickCreamCheese } from '../pages/pickCreamCheese'
 import { pickDressing } from '../pages/pickDressing'
 import { pickMeat } from '../pages/pickMeat'
-import { pickSalad } from '../pages/pickSalad'
+import { PickSalad } from '../pages/pick-salad/pick-salad';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { pickSalad } from '../pages/pickSalad'
     pickCreamCheese,
     pickDressing,
     pickMeat,
-    pickSalad
+    PickSalad
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -33,7 +33,7 @@ import { pickSalad } from '../pages/pickSalad'
     pickCreamCheese,
     pickDressing,
     pickMeat,
-    pickSalad
+    PickSalad
   ],
   providers: [Fillings, TotalBagels]
 })
