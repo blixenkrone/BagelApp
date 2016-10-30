@@ -81051,7 +81051,7 @@ var HomePage = (function () {
     }
     HomePage = __decorate$108([
         Component({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  The world is your oyster.\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n  </p>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  The world is your oyster.\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n  </p>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/
         }), 
         __metadata$2('design:paramtypes', [NavController])
     ], HomePage);
@@ -81248,7 +81248,7 @@ var Bagel = (function () {
     };
     Bagel = __decorate$111([
         Component({
-            selector: 'page-bagel',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/'<!--\n  Generated template for the Bagel page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>bagel</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/
+            selector: 'page-bagel',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/'<!--\n  Generated template for the Bagel page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>bagel</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/
         }), 
         __metadata$5('design:paramtypes', [NavController])
     ], Bagel);
@@ -81273,7 +81273,7 @@ var PickBread = (function () {
     };
     PickBread = __decorate$112([
         Component({
-            selector: 'page-pick-bread',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-bread/pick-bread.html"*/'<!--\n  Generated template for the PickBread page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickBread</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-bread/pick-bread.html"*/
+            selector: 'page-pick-bread',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-bread/pick-bread.html"*/'<!--\n  Generated template for the PickBread page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickBread</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-bread/pick-bread.html"*/
         }), 
         __metadata$6('design:paramtypes', [NavController])
     ], PickBread);
@@ -81304,7 +81304,7 @@ var PickCreamCheese = (function () {
     };
     PickCreamCheese = __decorate$113([
         Component({
-            selector: 'page-pick-cream-cheese',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/'<!--\n  Generated template for the PickCreamCheese page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickCreamCheese</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/
+            selector: 'page-pick-cream-cheese',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/'<!--\n  Generated template for the PickCreamCheese page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickCreamCheese</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/
         }), 
         __metadata$7('design:paramtypes', [NavController])
     ], PickCreamCheese);
@@ -81335,7 +81335,7 @@ var PickDressing = (function () {
     };
     PickDressing = __decorate$114([
         Component({
-            selector: 'page-pick-dressing',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/'<!--\n  Generated template for the PickDressing page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickDressing</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/
+            selector: 'page-pick-dressing',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/'<!--\n  Generated template for the PickDressing page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickDressing</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/
         }), 
         __metadata$8('design:paramtypes', [NavController])
     ], PickDressing);
@@ -81366,7 +81366,7 @@ var PickMeat = (function () {
     };
     PickMeat = __decorate$115([
         Component({
-            selector: 'page-pick-meat',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/'<!--\n  Generated template for the PickMeat page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickMeat</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/
+            selector: 'page-pick-meat',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/'<!--\n  Generated template for the PickMeat page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickMeat</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/
         }), 
         __metadata$9('design:paramtypes', [NavController])
     ], PickMeat);
@@ -81397,7 +81397,7 @@ var PickSalad = (function () {
     };
     PickSalad = __decorate$116([
         Component({
-            selector: 'page-pick-salad',template:/*ion-inline-start:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/'<!--\n  Generated template for the PickSalad page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickSalad</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/Kontoen/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/
+            selector: 'page-pick-salad',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/'<!--\n  Generated template for the PickSalad page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickSalad</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/
         }), 
         __metadata$10('design:paramtypes', [NavController])
     ], PickSalad);
