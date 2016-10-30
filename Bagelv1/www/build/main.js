@@ -81051,7 +81051,7 @@ var HomePage = (function () {
     }
     HomePage = __decorate$108([
         Component({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  The world is your oyster.\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n      Ionic Blank\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  The world is your oyster.\n\n  <p>\n\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n\n  </p>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\home\home.html"*/
         }), 
         __metadata$2('design:paramtypes', [NavController])
     ], HomePage);
@@ -81224,6 +81224,192 @@ var TotalBagel = (function () {
     return TotalBagel;
 }());
 
+var __decorate$111 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the Bagel page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var Bagel = (function () {
+    function Bagel(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    Bagel.prototype.ionViewDidLoad = function () {
+        console.log('Hello Bagel Page');
+    };
+    Bagel = __decorate$111([
+        Component({
+            selector: 'page-bagel',template:/*ion-inline-start:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\bagel\bagel.html"*/'<!--\n\n  Generated template for the Bagel page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>bagel</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\bagel\bagel.html"*/
+        }), 
+        __metadata$5('design:paramtypes', [NavController])
+    ], Bagel);
+    return Bagel;
+}());
+
+var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the PickBread page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var PickBread = (function () {
+    function PickBread(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    PickBread.prototype.ionViewDidLoad = function () {
+        console.log('Hello PickBread Page');
+    };
+    PickBread = __decorate$112([
+        Component({
+            selector: 'page-pick-bread',template:/*ion-inline-start:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-bread\pick-bread.html"*/'<!--\n\n  Generated template for the PickBread page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>pickBread</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-bread\pick-bread.html"*/
+        }), 
+        __metadata$6('design:paramtypes', [NavController])
+    ], PickBread);
+    return PickBread;
+}());
+
+var __decorate$113 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$7 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the PickCreamCheese page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var PickCreamCheese = (function () {
+    function PickCreamCheese(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    PickCreamCheese.prototype.ionViewDidLoad = function () {
+        console.log('Hello PickCreamCheese Page');
+    };
+    PickCreamCheese = __decorate$113([
+        Component({
+            selector: 'page-pick-cream-cheese',template:/*ion-inline-start:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-cream-cheese\pick-cream-cheese.html"*/'<!--\n\n  Generated template for the PickCreamCheese page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>pickCreamCheese</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-cream-cheese\pick-cream-cheese.html"*/
+        }), 
+        __metadata$7('design:paramtypes', [NavController])
+    ], PickCreamCheese);
+    return PickCreamCheese;
+}());
+
+var __decorate$114 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$8 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the PickDressing page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var PickDressing = (function () {
+    function PickDressing(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    PickDressing.prototype.ionViewDidLoad = function () {
+        console.log('Hello PickDressing Page');
+    };
+    PickDressing = __decorate$114([
+        Component({
+            selector: 'page-pick-dressing',template:/*ion-inline-start:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-dressing\pick-dressing.html"*/'<!--\n\n  Generated template for the PickDressing page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>pickDressing</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-dressing\pick-dressing.html"*/
+        }), 
+        __metadata$8('design:paramtypes', [NavController])
+    ], PickDressing);
+    return PickDressing;
+}());
+
+var __decorate$115 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$9 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the PickMeat page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var PickMeat = (function () {
+    function PickMeat(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    PickMeat.prototype.ionViewDidLoad = function () {
+        console.log('Hello PickMeat Page');
+    };
+    PickMeat = __decorate$115([
+        Component({
+            selector: 'page-pick-meat',template:/*ion-inline-start:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-meat\pick-meat.html"*/'<!--\n  Generated template for the PickMeat page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickMeat</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-meat\pick-meat.html"*/
+        }), 
+        __metadata$9('design:paramtypes', [NavController])
+    ], PickMeat);
+    return PickMeat;
+}());
+
+var __decorate$116 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata$10 = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/*
+  Generated class for the PickSalad page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+*/
+var PickSalad = (function () {
+    function PickSalad(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    PickSalad.prototype.ionViewDidLoad = function () {
+        console.log('Hello PickSalad Page');
+    };
+    PickSalad = __decorate$116([
+        Component({
+            selector: 'page-pick-salad',template:/*ion-inline-start:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-salad\pick-salad.html"*/'<!--\n\n  Generated template for the PickSalad page.\n\n\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>pickSalad</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Henrik\Desktop\Bagelv1\BagelApp\Bagelv1\src\pages\pick-salad\pick-salad.html"*/
+        }), 
+        __metadata$10('design:paramtypes', [NavController])
+    ], PickSalad);
+    return PickSalad;
+}());
+
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81240,7 +81426,13 @@ var AppModule = (function () {
         NgModule({
             declarations: [
                 MyApp,
-                HomePage
+                HomePage,
+                Bagel,
+                PickBread,
+                PickCreamCheese,
+                PickDressing,
+                PickMeat,
+                PickSalad
             ],
             imports: [
                 IonicModule.forRoot(MyApp)
@@ -81248,7 +81440,12 @@ var AppModule = (function () {
             bootstrap: [IonicApp],
             entryComponents: [
                 MyApp,
-                HomePage
+                HomePage,
+                PickBread,
+                PickCreamCheese,
+                PickDressing,
+                PickMeat,
+                PickSalad
             ],
             providers: [Fillings, TotalBagel]
         }), 
