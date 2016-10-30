@@ -5,8 +5,10 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class Fillings {
 
-  constructor(public http: Http) {
-    console.log('Hello Fillings Provider');
-  }
+  name: string;
 
+  constructor(name: string) {
+
+    this.name = name;
+  }
 }
