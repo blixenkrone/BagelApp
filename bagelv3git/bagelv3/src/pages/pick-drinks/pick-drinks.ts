@@ -35,5 +35,5 @@ GoHome(){
   }
 
   // Hej simon du prutter meget.
-
+  // Hej theis jeg er ligeglad med alt hvad du står for
 }
