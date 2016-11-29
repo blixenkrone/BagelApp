@@ -1,23 +1,18 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      The Bagel App
+      Home-Page
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
-  <h1> Velkommen til The Bagel App!</h1>  
-<p>Du kan her vælge pålæg og hvordan din bagel skal se ud.</p>
-   
-   <p>Desuden får du en tur i høet, hvis du betaler 400 kr. ekstra ved kassen.</p>
-
-   <p>The Bagel App er et frivilligt projekt, så lad være med at fucke noget op,
-   ej heller hate.</p>
-
-     <img class="img" src="bagel.jpg"/>
-      <button ion-button (click)="pageTwo()">Vælg butik</button>
-
+  <p>
+    <button ion-button block (click)="goToBagel()"> Lav en bagel </button>
+    <br>
+    <br>
+    <button ion-button block (click)="goToDrink()"> Vælg drikkevare </button>
+  </p>
 
 </ion-content>

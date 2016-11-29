@@ -1,18 +1,51 @@
-<!--
-  Generated template for the Bagel page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>bagel</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>Bagel-Page</ion-title>
+	</ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+	Klik her for at vælge brød:
+	<button ion-button block (click)="getPlain()"> Plain </button>
+	<button ion-button block (click)="getFuldkorn()"> Fuldkorn </button>
+	<button ion-button block (click)="getChilli()"> Chilli-cheddar </button>
+	<button ion-button block (click)="getSesam()"> Sesamfrø </button>
+	<br>
+	Klik her for at vælge Cream-Cheese:
+	<button ion-button block (click)="getIngen()"> Uden cream cheese </button>
+	<button ion-button block (click)="getHummus()"> Hummus </button>
+	<button ion-button block (click)="getPlaincreamcheese"> Plain cream cheese </button>
+	<button ion-button block (click)="getSoltorrettomatcreamcheese"> Soltorret tomat cream cheese </button>
+	<button ion-button block (click)="getPestocreamcheese()"> Pesto cream cheese </button>
+	<br>
+	<Klik her for at vælge Dressing:
+	<button ion-button block (click)="getPesto()"> Pesto </button>
+    <button ion-button block (click)="getChili()"> Chili </button>
+    <button ion-button block (click)="getCurry()"> Curry </button>
+    <button ion-button block (click)="getCreameFraiche()"> CreamFraiche </button>
+	<br>
+	Klik her for at vælge Kød:
+ 	<button ion-button block (click)="getKylling()">Kylling</button>
+	<button ion-button block  (click)="getKrydreKylling()">Krydre-Kylling</button>
+	<button ion-button block  (click)="getChorizo()">Chorizo</button>
+	<button ion-button block  (click)="getLaks()">Laks</button>
+	<br>
+	Klik her for at vælge Salad:
+	<button ion-button block (click)="getIceBerg()">Iceberg</button>
+	<button ion-button block  (click)="getAgurk()">Agurk</button>
+	<button ion-button block  (click)="getTomat()">Tomat</button>
+	<button ion-button block  (click)="getJalapenos()">Jalapenos</button>
+	<button ion-button block  (click)="getPickles()">Pickles</button>
+	<br>
+	Herunder ses indholdet i din bagel:
+	<ul>
+		<li *ngFor= "let fillings of totalBagel.totalBagelList">
+			{{fillings.name}}, {{fillings.price}}
+		</li>
+	</ul>
 
 </ion-content>

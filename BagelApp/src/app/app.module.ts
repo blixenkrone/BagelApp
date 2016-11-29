@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
+
 import { HomePage } from '../pages/home/home';
-import { Butik } from '../pages/butik/butik';
-import { BestilOversigt } from '../pages/bestil-oversigt/bestil-oversigt';
+import { Bagel } from '../pages/bagel/bagel';
+import { PickDrinks } from '../pages/pick-drinks/pick-drinks';
+
+import { Fillings } from '../providers/fillings';
+import { TotalBagel } from '../providers/totalbagel';
+import { Drinks } from '../providers/drinks';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    Butik,
-    BestilOversigt
+    Bagel,
+    PickDrinks
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -19,9 +24,9 @@ import { BestilOversigt } from '../pages/bestil-oversigt/bestil-oversigt';
   entryComponents: [
     MyApp,
     HomePage,
-    Butik,
-    BestilOversigt
+    Bagel,
+    PickDrinks
   ],
-  providers: []
+  providers: [Fillings, TotalBagel, Drinks]
 })
 export class AppModule {}

@@ -81036,56 +81036,6 @@ setTimeout(function () {
     }
 }, DEVICE_READY_TIMEOUT);
 
-var __decorate$108 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var HomePage = (function () {
-    function HomePage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    HomePage = __decorate$108([
-        Component({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  The world is your oyster.\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n  </p>\n</ion-content>\n\n\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/
-        }), 
-        __metadata$2('design:paramtypes', [NavController])
-    ], HomePage);
-    return HomePage;
-}());
-
-var __decorate$1 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$1 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var MyApp = (function () {
-    function MyApp(platform) {
-        this.rootPage = HomePage;
-        platform.ready().then(function () {
-            // Okay, so the platform is ready and our plugins are available.
-            // Here you can do any higher level native things you might need.
-            StatusBar.styleDefault();
-            Splashscreen.hide();
-        });
-    }
-    MyApp = __decorate$1([
-        Component({
-            template: "<ion-nav [root]=\"rootPage\"></ion-nav>"
-        }), 
-        __metadata$1('design:paramtypes', [Platform])
-    ], MyApp);
-    return MyApp;
-}());
-
 var __extends$140 = (commonjsGlobal && commonjsGlobal.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -81181,26 +81131,6 @@ var Observable_1$4 = Observable_1$1;
 var map_1 = map_1$1;
 Observable_1$4.Observable.prototype.map = map_1.map;
 
-var __decorate$109 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var Fillings = (function () {
-    function Fillings(name) {
-        this.name = name;
-    }
-    Fillings = __decorate$109([
-        Injectable(), 
-        __metadata$3('design:paramtypes', [String])
-    ], Fillings);
-    return Fillings;
-}());
-
 var __decorate$110 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -81214,8 +81144,8 @@ var TotalBagel = (function () {
     function TotalBagel() {
         this.totalBagelList = [];
     }
-    TotalBagel.prototype.getBagel = function () {
-        console.log("Dette er Arrayet fra serviceBagel: " + this.totalBagelList);
+    TotalBagel.prototype.getBagel = function (item) {
+        console.log("Dette er Arrayet fra totalBagelList: " + this.totalBagelList);
     };
     TotalBagel = __decorate$110([
         Injectable(), 
@@ -81233,51 +81163,95 @@ var __decorate$111 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$5 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the Bagel page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
-var Bagel = (function () {
-    function Bagel(navCtrl) {
-        this.navCtrl = navCtrl;
+var Fillings = (function () {
+    function Fillings(name, price) {
+        this.name = name;
+        this.price = price;
     }
-    Bagel.prototype.ionViewDidLoad = function () {
-        console.log('Hello Bagel Page');
-    };
-    Bagel = __decorate$111([
-        Component({
-            selector: 'page-bagel',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/'<!--\n  Generated template for the Bagel page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>bagel</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/
-        }), 
-        __metadata$5('design:paramtypes', [NavController])
-    ], Bagel);
-    return Bagel;
+    Fillings = __decorate$111([
+        Injectable(), 
+        __metadata$5('design:paramtypes', [String, Number])
+    ], Fillings);
+    return Fillings;
 }());
 
-var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+var __decorate$109 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
+var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var PickBread = (function () {
-    function PickBread(navCtrl) {
+var Bagel = (function () {
+    function Bagel(totalBagel, navCtrl) {
+        this.totalBagel = totalBagel;
         this.navCtrl = navCtrl;
+        // Herunder oprettes alle objekter af Fillings:
+        // ________Bread_________
+        this.fuldkorn = new Fillings("Fuldkorn", 10);
+        this.plain = new Fillings("Plain", 10);
+        this.chilliCheddar = new Fillings("Chilli Cheddar", 10);
+        this.sesam = new Fillings("Sesamfrø", 10);
+        // ________Cream-Cheese_________
+        this.Ingen = new Fillings("Ingen", 0);
+        this.Hummus = new Fillings("Hummus", 5);
+        this.Plaincreamcheese = new Fillings("Plaincreamcheese", 5);
+        this.Soltorrettomatcreamcheese = new Fillings("Soltorrettomatcreamcheese", 5);
+        this.Pestocreamcheese = new Fillings("Pestocreamcheese", 5);
+        // ________Dressing_________
+        this.Pesto = new Fillings("Pesto", 7);
+        this.Chili = new Fillings("Chili", 7);
+        this.Curry = new Fillings("Curry", 7);
+        this.CremeFraiche = new Fillings("Creme Fraiche", 7);
+        // ________Kød_________
+        this.Kylling = new Fillings("Kylling", 12);
+        this.KrydreKylling = new Fillings("Krydre-Kylling", 12);
+        this.Chorizo = new Fillings("Chorizo", 10);
+        this.Laks = new Fillings("Laks", 15);
+        // ________Salad_________
+        this.IceBerg = new Fillings("Iceberg", 4);
+        this.Agurk = new Fillings("Agurk", 5);
+        this.Tomat = new Fillings("Tomat", 5);
+        this.Jalapenos = new Fillings("Jalapenos", 5);
+        this.Pickles = new Fillings("Pickles", 5);
     }
-    PickBread.prototype.ionViewDidLoad = function () {
-        console.log('Hello PickBread Page');
-    };
-    PickBread = __decorate$112([
+    // Herunder defineres alle functioner tilknyttet til objekterne.
+    // ________Bread_________
+    Bagel.prototype.getFuldkorn = function () { this.totalBagel.totalBagelList.push(this.fuldkorn); };
+    Bagel.prototype.getPlain = function () { this.totalBagel.totalBagelList.push(this.plain); };
+    Bagel.prototype.getSesam = function () { this.totalBagel.totalBagelList.push(this.sesam); };
+    Bagel.prototype.getChilli = function () { this.totalBagel.totalBagelList.push(this.chilliCheddar); };
+    // ________Cream-Cheese_________
+    Bagel.prototype.getIngen = function () { this.totalBagel.totalBagelList.push(this.Ingen); };
+    Bagel.prototype.getHummus = function () { this.totalBagel.totalBagelList.push(this.Hummus); };
+    Bagel.prototype.getPlaincreamcheese = function () { this.totalBagel.totalBagelList.push(this.Plaincreamcheese); };
+    Bagel.prototype.getSoltorrettomatcreamcheese = function () { this.totalBagel.totalBagelList.push(this.Soltorrettomatcreamcheese); };
+    Bagel.prototype.getPestocreamcheese = function () { this.totalBagel.totalBagelList.push(this.Pestocreamcheese); };
+    // ________Dressing_________
+    Bagel.prototype.getPesto = function () { this.totalBagel.totalBagelList.push(this.Pesto); };
+    Bagel.prototype.getChili = function () { this.totalBagel.totalBagelList.push(this.Chili); };
+    Bagel.prototype.getCurry = function () { this.totalBagel.totalBagelList.push(this.Curry); };
+    Bagel.prototype.getCreameFraiche = function () { this.totalBagel.totalBagelList.push(this.CremeFraiche); };
+    // ________Kød_________
+    Bagel.prototype.getKylling = function () { this.totalBagel.totalBagelList.push(this.Kylling); };
+    Bagel.prototype.getKrydreKylling = function () { this.totalBagel.totalBagelList.push(this.KrydreKylling); };
+    Bagel.prototype.getChorizo = function () { this.totalBagel.totalBagelList.push(this.Chorizo); };
+    Bagel.prototype.getLaks = function () { this.totalBagel.totalBagelList.push(this.Laks); };
+    // ________Salad_________
+    Bagel.prototype.getIceBerg = function () { this.totalBagel.totalBagelList.push(this.IceBerg); };
+    Bagel.prototype.getAgurk = function () { this.totalBagel.totalBagelList.push(this.Agurk); };
+    Bagel.prototype.getTomat = function () { this.totalBagel.totalBagelList.push(this.Tomat); };
+    Bagel.prototype.getJalapenos = function () { this.totalBagel.totalBagelList.push(this.Jalapenos); };
+    Bagel.prototype.getPickles = function () { this.totalBagel.totalBagelList.push(this.Pickles); };
+    Bagel = __decorate$109([
         Component({
-            selector: 'page-pick-bread',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-bread/pick-bread.html"*/'<!--\n  Generated template for the PickBread page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickBread</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-bread/pick-bread.html"*/
+            selector: 'page-bagel',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/'<ion-header>\n\n	<ion-navbar>\n		<ion-title>Bagel-Page</ion-title>\n	</ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n	Klik her for at vælge brød:\n	<button ion-button block (click)="getPlain()"> Plain </button>\n	<button ion-button block (click)="getFuldkorn()"> Fuldkorn </button>\n	<button ion-button block (click)="getChilli()"> Chilli-cheddar </button>\n	<button ion-button block (click)="getSesam()"> Sesamfrø </button>\n	<br>\n	Klik her for at vælge Cream-Cheese:\n	<button ion-button block (click)="getIngen()"> Uden cream cheese </button>\n	<button ion-button block (click)="getHummus()"> Hummus </button>\n	<button ion-button block (click)="getPlaincreamcheese"> Plain cream cheese </button>\n	<button ion-button block (click)="getSoltorrettomatcreamcheese"> Soltorret tomat cream cheese </button>\n	<button ion-button block (click)="getPestocreamcheese()"> Pesto cream cheese </button>\n	<br>\n	<Klik her for at vælge Dressing:\n	<button ion-button block (click)="getPesto()"> Pesto </button>\n    <button ion-button block (click)="getChili()"> Chili </button>\n    <button ion-button block (click)="getCurry()"> Curry </button>\n    <button ion-button block (click)="getCreameFraiche()"> CreamFraiche </button>\n	<br>\n	Klik her for at vælge Kød:\n 	<button ion-button block (click)="getKylling()">Kylling</button>\n	<button ion-button block  (click)="getKrydreKylling()">Krydre-Kylling</button>\n	<button ion-button block  (click)="getChorizo()">Chorizo</button>\n	<button ion-button block  (click)="getLaks()">Laks</button>\n	<br>\n	Klik her for at vælge Salad:\n	<button ion-button block (click)="getIceBerg()">Iceberg</button>\n	<button ion-button block  (click)="getAgurk()">Agurk</button>\n	<button ion-button block  (click)="getTomat()">Tomat</button>\n	<button ion-button block  (click)="getJalapenos()">Jalapenos</button>\n	<button ion-button block  (click)="getPickles()">Pickles</button>\n	<br>\n	Herunder ses indholdet i din bagel:\n	<ul>\n		<li *ngFor= "let fillings of totalBagel.totalBagelList">\n			{{fillings.name}}, {{fillings.price}}\n		</li>\n	</ul>\n\n</ion-content>'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/bagel/bagel.html"*/
         }), 
-        __metadata$6('design:paramtypes', [NavController])
-    ], PickBread);
-    return PickBread;
+        __metadata$3('design:paramtypes', [TotalBagel, NavController])
+    ], Bagel);
+    return Bagel;
 }());
 
 var __decorate$113 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -81289,119 +81263,110 @@ var __decorate$113 = (undefined && undefined.__decorate) || function (decorators
 var __metadata$7 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the PickCreamCheese page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
-var PickCreamCheese = (function () {
-    function PickCreamCheese(navCtrl) {
-        this.navCtrl = navCtrl;
+var Drinks = (function () {
+    function Drinks(name) {
+        this.name = name;
     }
-    PickCreamCheese.prototype.ionViewDidLoad = function () {
-        console.log('Hello PickCreamCheese Page');
-    };
-    PickCreamCheese = __decorate$113([
-        Component({
-            selector: 'page-pick-cream-cheese',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/'<!--\n  Generated template for the PickCreamCheese page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickCreamCheese</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-cream-cheese/pick-cream-cheese.html"*/
-        }), 
-        __metadata$7('design:paramtypes', [NavController])
-    ], PickCreamCheese);
-    return PickCreamCheese;
+    Drinks = __decorate$113([
+        Injectable(), 
+        __metadata$7('design:paramtypes', [String])
+    ], Drinks);
+    return Drinks;
 }());
 
-var __decorate$114 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+var __decorate$112 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata$8 = (undefined && undefined.__metadata) || function (k, v) {
+var __metadata$6 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the PickDressing page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
-var PickDressing = (function () {
-    function PickDressing(navCtrl) {
+var PickDrinks = (function () {
+    function PickDrinks(totalbagel, navCtrl) {
+        this.totalbagel = totalbagel;
         this.navCtrl = navCtrl;
+        this.Cola = new Drinks("Coca-cola");
+        this.Fanta = new Drinks("Fanta");
+        this.manjuice = new Drinks("Joey's manjuice");
+        this.CremeFraiche = new Drinks("Creme Fraiche");
     }
-    PickDressing.prototype.ionViewDidLoad = function () {
-        console.log('Hello PickDressing Page');
+    PickDrinks.prototype.getCola = function () {
+        this.totalbagel.totalBagelList.push(this.Cola);
     };
-    PickDressing = __decorate$114([
+    PickDrinks.prototype.getFanta = function () {
+        this.totalbagel.totalBagelList.push(this.Fanta);
+    };
+    PickDrinks.prototype.getCreameFraiche = function () {
+        this.totalbagel.totalBagelList.push(this.CremeFraiche);
+    };
+    PickDrinks.prototype.GoHome = function () {
+        this.navCtrl.push(HomePage);
+    };
+    PickDrinks = __decorate$112([
         Component({
-            selector: 'page-pick-dressing',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/'<!--\n  Generated template for the PickDressing page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickDressing</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-dressing/pick-dressing.html"*/
+            selector: 'page-pick-drinks',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-drinks/pick-drinks.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Drinks Page</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n  <button ion-button block (click)="getCola()"> Coca-Cola </button>\n  <button ion-button block (click)="getFanta()"> Fanta </button>\n  <button ion-button block (click)="getCreameFraiche()"> Sprite </button> <br><br>\n  <button ion-button block (click)="GoHome()"> Tilbage til Menu </button>\n</ion-content>'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-drinks/pick-drinks.html"*/
         }), 
-        __metadata$8('design:paramtypes', [NavController])
-    ], PickDressing);
-    return PickDressing;
+        __metadata$6('design:paramtypes', [TotalBagel, NavController])
+    ], PickDrinks);
+    return PickDrinks;
 }());
 
-var __decorate$115 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+var __decorate$108 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata$9 = (undefined && undefined.__metadata) || function (k, v) {
+var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the PickMeat page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
-var PickMeat = (function () {
-    function PickMeat(navCtrl) {
+var HomePage = (function () {
+    function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
-    PickMeat.prototype.ionViewDidLoad = function () {
-        console.log('Hello PickMeat Page');
+    HomePage.prototype.goToBagel = function () {
+        this.navCtrl.push(Bagel);
     };
-    PickMeat = __decorate$115([
+    HomePage.prototype.goToDrink = function () {
+        this.navCtrl.push(PickDrinks);
+    };
+    HomePage = __decorate$108([
         Component({
-            selector: 'page-pick-meat',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/'<!--\n  Generated template for the PickMeat page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickMeat</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-meat/pick-meat.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Home-Page\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <p>\n    <button ion-button block (click)="goToBagel()"> Lav en bagel </button>\n    <br>\n    <br>\n    <button ion-button block (click)="goToDrink()"> Vælg drikkevare </button>\n  </p>\n\n</ion-content>'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/home/home.html"*/
         }), 
-        __metadata$9('design:paramtypes', [NavController])
-    ], PickMeat);
-    return PickMeat;
+        __metadata$2('design:paramtypes', [NavController])
+    ], HomePage);
+    return HomePage;
 }());
 
-var __decorate$116 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+var __decorate$1 = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata$10 = (undefined && undefined.__metadata) || function (k, v) {
+var __metadata$1 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-/*
-  Generated class for the PickSalad page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
-var PickSalad = (function () {
-    function PickSalad(navCtrl) {
-        this.navCtrl = navCtrl;
+var MyApp = (function () {
+    function MyApp(platform) {
+        this.rootPage = HomePage;
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            StatusBar.styleDefault();
+            Splashscreen.hide();
+        });
     }
-    PickSalad.prototype.ionViewDidLoad = function () {
-        console.log('Hello PickSalad Page');
-    };
-    PickSalad = __decorate$116([
+    MyApp = __decorate$1([
         Component({
-            selector: 'page-pick-salad',template:/*ion-inline-start:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/'<!--\n  Generated template for the PickSalad page.\n\n  See http://ionicframework.com/docs/v2/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>pickSalad</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/SimonBlixenkrone/ionic/BagelApp/Bagelv1/src/pages/pick-salad/pick-salad.html"*/
+            template: "<ion-nav [root]=\"rootPage\"></ion-nav>"
         }), 
-        __metadata$10('design:paramtypes', [NavController])
-    ], PickSalad);
-    return PickSalad;
+        __metadata$1('design:paramtypes', [Platform])
+    ], MyApp);
+    return MyApp;
 }());
 
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
@@ -81422,11 +81387,7 @@ var AppModule = (function () {
                 MyApp,
                 HomePage,
                 Bagel,
-                PickBread,
-                PickCreamCheese,
-                PickDressing,
-                PickMeat,
-                PickSalad
+                PickDrinks
             ],
             imports: [
                 IonicModule.forRoot(MyApp)
@@ -81435,13 +81396,10 @@ var AppModule = (function () {
             entryComponents: [
                 MyApp,
                 HomePage,
-                PickBread,
-                PickCreamCheese,
-                PickDressing,
-                PickMeat,
-                PickSalad
+                Bagel,
+                PickDrinks
             ],
-            providers: [Fillings, TotalBagel]
+            providers: [Fillings, TotalBagel, Drinks]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

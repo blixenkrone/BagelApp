@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
-import { Butik } from '../butik/butik';
+import { Bagel } from '../bagel/bagel';
+
+import { PickDrinks } from '../pick-drinks/pick-drinks';
 
 @Component({
   selector: 'page-home',
@@ -10,13 +12,13 @@ import { Butik } from '../butik/butik';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-    
+  constructor(public navCtrl: NavController) {}
+
+  goToBagel(){
+    this.navCtrl.push(Bagel);
   }
 
-  pageTwo() {
-    this.navCtrl.push(Butik, {
-    });
-}
-
+  goToDrink(){
+    this.navCtrl.push(PickDrinks);
+  }
 }
