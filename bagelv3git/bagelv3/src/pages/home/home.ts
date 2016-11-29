@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { Bagel } from '../bagel/bagel';
 import { PickDrinks } from '../pick-drinks/pick-drinks';
 import { Store } from '../store/store/';
-
+import { LocationPage } from '../location/location';
 
 @Component({
   selector: 'page-home',
@@ -22,7 +22,7 @@ export class HomePage {
     this.navCtrl.push(PickDrinks);
   }
 
-  // goToStore() {
-  //   this.navCtrl.push(Store);
-  // }
+  goToStore() {
+    this.navCtrl.push(LocationPage);
+  }
 }

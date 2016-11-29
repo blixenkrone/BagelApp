@@ -30,11 +30,8 @@ constructor (public totalbagel : TotalBagel, public navCtrl : NavController) {}
   this.totalbagel.totalBagelList.push(this.CremeFraiche);
   }
 
-GoHome(){
-    this.navCtrl.push(HomePage);
-  }
+  GoHome(){
+      this.navCtrl.push(HomePage);
+    }
 
-  // Hej simon du prutter meget.
-  // Hej theis jeg er ligeglad med alt hvad du står for
-  // Fuck dig.
 }

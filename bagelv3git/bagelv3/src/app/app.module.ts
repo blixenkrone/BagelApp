@@ -1,16 +1,18 @@
+import { LocationPage } from '../pages/location/location';
 
 import { PickDrinks } from '../pages/pick-drinks/pick-drinks';
 import { Store } from '../pages/store/store';
 import { Bagel } from '../pages/bagel/bagel';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
 import { Fillings } from '../providers/fillings';
 import { TotalBagel } from '../providers/totalbagel';
 import { Drinks } from '../providers/drinks';
 import { LocationTracker } from '../providers/location-tracker';
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { LocationTracker } from '../providers/location-tracker';
     HomePage,
     Bagel,
     Store,
-    PickDrinks
+    PickDrinks,
+    LocationPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,8 +33,10 @@ import { LocationTracker } from '../providers/location-tracker';
     HomePage,
     Bagel,
     Store,
-    PickDrinks
+    PickDrinks,
+    LocationPage
   ],
+
   
   providers: [Fillings, TotalBagel, Drinks, LocationTracker, {provide: ErrorHandler, useClass: IonicErrorHandler}]
   // providers: [Fillings, TotalBagel, Drinks, {provide: ErrorHandler, useClass: IonicErrorHandler}]
