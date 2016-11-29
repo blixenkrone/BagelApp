@@ -34,4 +34,6 @@ GoHome(){
     this.navCtrl.push(HomePage);
   }
 
+  // Hej simon du prutter meget.
+
 }
