@@ -6,8 +6,8 @@ import 'rxjs/add/operator/filter';
 export class LocationTracker {
   
   public watch: any;    
-  public lat: number = 0;
-  public lng: number = 0;
+  public lat: any;
+  public lng: any;
 
   constructor(public zone: NgZone) {
 
@@ -27,7 +27,7 @@ export class LocationTracker {
 
     BackgroundGeolocation.configure((location) => {
 
-		console.log('BackgroundGeolocation:  ' + location.latitude + ',' + location.longitude);
+		// console.log('BackgroundGeolocation:  ' + location.latitude + ',' + location.longitude);
 
 		// Run update inside of Angular's zone
 		this.zone.run(() => {
@@ -54,17 +54,19 @@ export class LocationTracker {
 
 	this.watch = Geolocation.watchPosition(options).filter((p: any) => p.code === undefined).subscribe((position: Geoposition) => {
 
-		console.log(position);
+		// console.log('position:' + position);
 
 		// Run update inside of Angular's zone
 		this.zone.run(() => {
 			this.lat = position.coords.latitude;
 			this.lng = position.coords.longitude;
+      // console.log('latitude:' + this.lat);
+      // console.log('longitude:' + this.lng);
 		});
 
 	});
-
   }
+ 
 
   stopTracking() {
 
@@ -75,3 +77,4 @@ export class LocationTracker {
 
   }
 }
+
