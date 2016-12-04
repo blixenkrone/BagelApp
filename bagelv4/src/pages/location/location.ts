@@ -44,11 +44,9 @@ export class LocationPage implements OnInit{
 
 
   public calculateDist(){
-    var distRoskilde = (this.usrStoreLat-this.roskilde.lat)+(this.usrStoreLong-this.roskilde.long);
-    var distValby = (this.usrStoreLat-this.valby.lat)+(this.usrStoreLong-this.valby.long);
-    var distKbhK = (this.usrStoreLat-this.kbhK.lat)+(this.usrStoreLong-this.kbhK.long);
-
-    // this.storeArray = [distKbhK, distValby, distRoskilde].sort();
+    var distRoskilde = ((this.usrStoreLat-this.roskilde.lat)+(this.usrStoreLong-this.roskilde.long));
+    var distValby = ((this.usrStoreLat-this.valby.lat)+(this.usrStoreLong-this.valby.long));
+    var distKbhK = ((this.usrStoreLat-this.kbhK.lat)+(this.usrStoreLong-this.kbhK.long));
 
     this.storeArray = [distKbhK, distValby, distRoskilde];
     var sortDist = this.storeArray.sort();
