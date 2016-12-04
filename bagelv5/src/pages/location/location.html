@@ -1,5 +1,5 @@
 <ion-header>
-	<ion-navbar color="secondary">
+	<ion-navbar>
 	  <ion-title>
 	    Location Tracker
 	  </ion-title>
@@ -10,8 +10,7 @@
 	<h4>Current Latitude: {{locationTracker.lat}}</h4>
 	<h4>Current Longitude: {{locationTracker.lng}}</h4>
 
-	<h3>Tættest butik: {{this.storeArray}} </h3>
-
+		<p> Tætteste butik: {{this.storeArray[0]}} </p>
 
 	<button ion-button full primary (click)="start()">Find nærmeste butik</button>
 	<button ion-button full primary (click)="stop()">Stop Tracking</button>
