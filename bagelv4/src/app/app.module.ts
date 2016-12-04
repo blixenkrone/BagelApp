@@ -36,6 +36,5 @@ import { LocationTracker } from '../providers/location-tracker';
 
   
   providers: [Fillings, TotalBagel, Drinks, LocationTracker, {provide: ErrorHandler, useClass: IonicErrorHandler}]
-  // providers: [Fillings, TotalBagel, Drinks, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      The Bagel App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <img src="thebagelapp.jpg"/>
+
+    <button ion-button block (click)="goToCart()"> Gå til kurv </button>
+
+    <img class="bagelClick" src="drinks.jpg" (click)="goToDrink()"/>
+    <img class="bagelClick" src="bagel.jpg" (click)="goToBagel()"/>
+
+    <button ion-button block (click)="goToStore()"> Se butikker i nærheden </button>
+</ion-content>

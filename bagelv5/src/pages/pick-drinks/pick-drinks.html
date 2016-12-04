@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Drinks Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <button ion-button block (click)="getCola()"> Coca-Cola </button>
+  <button ion-button block (click)="getFanta()"> Fanta </button>
+  <button ion-button block (click)="getSprite()"> Sprite </button> <br><br>
+  <button ion-button block (click)="GoHome()"> Tilbage til Forsiden </button>
+
+  <h2> Bestilt: </h2>
+
+<ion-list>
+  <ion-item *ngFor="let drinks of cart.checkOutDrinks; let i = index">
+      {{drinks.name}} {{drinks.pris}}
+      <button ion-button color="danger" item-right (click)="removeDrink(i)">
+      <ion-icon name="close"></ion-icon>
+      </button>
+  </ion-item>
+</ion-list>
+
+</ion-content>
