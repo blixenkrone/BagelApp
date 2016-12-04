@@ -9,9 +9,10 @@
 <ion-content>
 	<h4>Current Latitude: {{locationTracker.lat}}</h4>
 	<h4>Current Longitude: {{locationTracker.lng}}</h4>
-
-		<p> Tætteste butik: {{this.storeArray[0]}} </p>
+	<p *ngFor="let storeArray of Location">
+	<h3>Tætteste butik: {{storeArray[0]}} </h3>
 
 	<button ion-button full primary (click)="start()">Find nærmeste butik</button>
 	<button ion-button full primary (click)="stop()">Stop Tracking</button>
+
 </ion-content>

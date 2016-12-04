@@ -44,21 +44,20 @@ export class LocationPage implements OnInit{
 
 
   public calculateDist (){
-    var distRoskilde  = ((this.usrStoreLat-this.roskilde.lat)+(this.usrStoreLong-this.roskilde.long)) + this.roskilde.name;
-    var distValby     = ((this.usrStoreLat-this.valby.lat)+(this.usrStoreLong-this.valby.long)) + this.valby.name;
-    var distKbhK      = ((this.usrStoreLat-this.kbhK.lat)+(this.usrStoreLong-this.kbhK.long)) + this.kbhK.name;
 
-    this.storeArray = [distValby, distKbhK, distRoskilde];
+    var distRoskilde  = ((this.usrStoreLat-this.roskilde.lat)+(this.usrStoreLong-this.roskilde.long));
+    var distValby     = ((this.usrStoreLat-this.valby.lat)+(this.usrStoreLong-this.valby.long));
+    var distKbhK      = ((this.usrStoreLat-this.kbhK.lat)+(this.usrStoreLong-this.kbhK.long));
+    
+    this.storeArray = [{dist: distRoskilde, name: this.roskilde.name}, {dist: distValby, name: this.valby.name}, {dist: distKbhK, name:this.kbhK.name}];
     this.storeArray.sort();
     
-    console.log('se:' + typeof(this.storeArray[0]) + this.storeArray[0].toString());    
-    // console.log('store arrayet:' + this.storeArray[0]);
+    console.log('se:'+this.storeArray[0].name);
   }
 
   stop(){
   	this.locationTracker.stopTracking();
   }
-
   // http://www.joshmorony.com/adding-background-geolocation-to-an-ionic-2-application/
 
 }
