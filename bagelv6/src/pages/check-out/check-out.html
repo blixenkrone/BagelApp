@@ -1,0 +1,33 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Kurv <ion-icon name="cart"></ion-icon></ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<h2> Bestilte bagels: </h2>
+	<ul *ngFor="let tempTotalBagel of cart.checkOutBagels; let i = index">
+		<button ion-button full clear color="dark" (click)="removeBagel(i)" item-right icon-left><ion-icon color="danger" name="trash"></ion-icon>
+		{{tempTotalBagel.totalBagelList[tempTotalBagel.totalBagelList.length-1].name}}:{{tempTotalBagel.totalBagelList[tempTotalBagel.totalBagelList.length-4].name}}
+		 // Pris: {{tempTotalBagel.totalPrice}},- </button>
+		<li *ngFor="let fillings of tempTotalBagel.totalBagelList">
+			{{fillings.name}} {{fillings.price}}
+		</li>
+		-------------------------------------------------
+	</ul>
+
+	<h2> Bestilte drikkevare: </h2>
+	<ul>
+		<li *ngFor="let drinks of cart.checkOutDrinks">
+			{{drinks.name}} {{drinks.pris}}
+		</li>
+			-------------------------------------------------
+	</ul>
+
+	<h2> Total pris: {{cart.totalPrice}},-</h2>
+
+</ion-content>
