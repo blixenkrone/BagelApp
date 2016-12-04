@@ -1,0 +1,98 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Bagel-Page</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="upperScreen">
+	<div [@visibilityChanged]="animateBread">
+     <img src="images/overbolle.png"/>
+  	</div>
+	<div [@visibilityChanged]="animateDressing">
+   <img src="images/dressing.png"/>
+  	</div>
+	<div [@visibilityChanged]="animateIceBerg">
+       <img src="images/salat.png"/>
+  	</div>
+	  <div [@visibilityChanged]="animateAgurk">
+      <img src="images/agurk.png"/>
+  	</div>
+	  <div [@visibilityChanged]="animateTomat">
+        <img src="images/tomat.png"/>
+  	</div>
+	  <div [@visibilityChanged]="animateJalapenos">
+       <img src="images/jala.png"/>
+  	</div>
+	<div [@visibilityChanged]="animateMeat">
+		<img src="images/pålæg.png"/>
+  	</div>
+	<div [@visibilityChanged]="animateCreamCheese">
+      <img src="images/cc.png"/>
+  	</div>
+	<div [@visibilityChanged]="animateBread">
+       <img src="images/underbolle.png"/>
+  	</div>
+</div>
+	
+
+<div class="lowerScreen" >
+<div [@visibilityChanged]="animateBreadButtons">
+	<button ion-button block (click)="getPlain()"> Plain </button>
+	<button ion-button block (click)="getFuldkorn()"> Fuldkorn </button>
+	<button ion-button block (click)="getChilli()"> Chilli-cheddar </button>
+	<button ion-button block (click)="getSesam()"> Sesamfrø </button>
+	<br>
+</div>
+<div [@visibilityChanged]="animateCreamCheeseButtons">
+	<button ion-button block (click)="getHummus()"> Hummus </button>
+	<button ion-button block (click)="getPlainCC()"> Plain cream cheese </button>
+	<button ion-button block (click)="getSolTomatCC()"> Soltørret-tomat cream cheese </button>
+	<button ion-button block (click)="getPestocreamcheese()"> Pesto cream cheese </button>
+	<br> 
+</div>
+<div [@visibilityChanged]="animateDressingButtons">
+	<button ion-button block (click)="getPesto()"> Pesto </button>
+    <button ion-button block (click)="getChili()"> Chili </button>
+    <button ion-button block (click)="getCurry()"> Curry </button>
+    <button ion-button block (click)="getCreameFraiche()"> CreamFraiche </button>
+	<br>
+</div>
+<div [@visibilityChanged]="animateMeatButtons">
+ 	<button ion-button block (click)="getKylling()">Kylling</button>
+	<button ion-button block  (click)="getKrydreKylling()">Krydre-Kylling</button>
+	<button ion-button block  (click)="getChorizo()">Chorizo</button>
+	<button ion-button block  (click)="getLaks()">Laks</button>
+	<br>
+</div>
+<div [@visibilityChanged]="animateIceBergButton">
+	<button ion-button block (click)="getIceBerg()">Iceberg</button>
+</div>
+<div [@visibilityChanged]="animateAgurkButton">
+	<button ion-button block  (click)="getAgurk()">Agurk</button>
+</div>
+<div [@visibilityChanged]="animateTomatButton">
+	<button ion-button block  (click)="getTomat()">Tomat</button>
+</div>
+<div [@visibilityChanged]="animateJalapenosButton">
+	<button ion-button block  (click)="getJalapenos()">Jalapenos</button>
+</div>
+<div [@visibilityChanged]="animateConfirmButton">
+	<button ion-button block  (click)="confirmChoice()">Bekræft valgte</button>
+</div>
+<button [@visibilityChanged]="animateBackButton" (click)="regretChoice()" ion-button block>Fjern valgte</button>
+</div>
+
+	<!--Herunder ses indholdet i din bagel:
+	<br>
+	Total-pris: {{totalBagel.totalPrice}}
+	<ul>
+		<li *ngFor= "let fillings of totalBagel.totalBagelList">
+			{{fillings.name}}, {{fillings.price}}
+		</li>
+	</ul>-->
+
+</ion-content>
