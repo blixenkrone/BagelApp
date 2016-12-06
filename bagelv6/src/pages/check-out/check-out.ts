@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { Cart } from '../../providers/cart';
 import { TotalBagel } from '../../providers/totalbagel';
 

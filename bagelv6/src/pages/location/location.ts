@@ -22,6 +22,7 @@ export class LocationPage implements OnInit{
   public amager: StoreLocation = new StoreLocation("Amager", "Amager Blvd. 144, 2450 Amager", 55.667923, 12.585762, null);
 
   constructor(public navCtrl: NavController, public locationTracker: LocationTracker) {
+    this.locationTracker = locationTracker;
   }
 
   // START GEO TRACKING FOR NUVÆRENDE POSITION
@@ -38,7 +39,7 @@ export class LocationPage implements OnInit{
     this.usrStoreLong = this.locationTracker.lng;
 
     
-    if(this.locationTracker.lat != null || this.locationTracker.lat != undefined){
+    if(this.locationTracker.lat != null){
     console.log('Tracker nu!');
     console.log('person lokation lat:' + this.usrStoreLat);
     console.log('person lokation long:' + this.usrStoreLong);
