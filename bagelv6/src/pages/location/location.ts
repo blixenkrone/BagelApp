@@ -49,10 +49,10 @@ export class LocationPage implements OnInit{
 
   public calculateDist (){
 
-    var distRoskilde  = ((this.usrStoreLat-this.roskilde.lat)+(this.usrStoreLong-this.roskilde.long));
-    var distValby     = ((this.usrStoreLat-this.valby.lat)+(this.usrStoreLong-this.valby.long));
-    var distKbhK      = ((this.usrStoreLat-this.kbhK.lat)+(this.usrStoreLong-this.kbhK.long));
-    var distNorrebro  = ((this.usrStoreLat-this.nørrebro.lat)+(this.usrStoreLong-this.nørrebro.long));
+    var distRoskilde  = (Math.abs(this.usrStoreLat-this.roskilde.lat)+Math.abs(this.usrStoreLong-this.roskilde.long));
+    var distValby     = (Math.abs(this.usrStoreLat-this.valby.lat)+Math.abs(this.usrStoreLong-this.valby.long));
+    var distKbhK      = (Math.abs(this.usrStoreLat-this.kbhK.lat)+Math.abs(this.usrStoreLong-this.kbhK.long));
+    var distNorrebro  = (Math.abs(this.usrStoreLat-this.nørrebro.lat)+Math.abs(this.usrStoreLong-this.nørrebro.long));
     var distAmager    = (Math.abs(this.usrStoreLat-this.amager.lat)+Math.abs(this.usrStoreLong-this.amager.long));
     
     this.storeArray = [{dist: distRoskilde, name: this.roskilde.name}, {dist: distValby, name: this.valby.name}, 
