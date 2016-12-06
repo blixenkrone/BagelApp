@@ -55,14 +55,14 @@ export class LocationPage implements OnInit{
     var distNorrebro  = (Math.abs(this.usrStoreLat-this.nørrebro.lat)+Math.abs(this.usrStoreLong-this.nørrebro.long));
     var distAmager    = (Math.abs(this.usrStoreLat-this.amager.lat)+Math.abs(this.usrStoreLong-this.amager.long));
     
-    this.storeArray = [{dist: distRoskilde, name: this.roskilde.name}, {dist: distValby, name: this.valby.name}, 
-    {dist: distKbhK, name:this.kbhK.name}, {dist: distNorrebro, name:this.nørrebro.name}, {dist: distAmager, name:this.amager.name}];
+    this.storeArray = [{dist: distRoskilde, name: this.roskilde.name, address:this.roskilde.address}, {dist: distValby, name: this.valby.name, address:this.valby.address}, 
+    {dist: distKbhK, name:this.kbhK.name, address:this.kbhK.address}, {dist: distNorrebro, name:this.nørrebro.name, address:this.nørrebro.address}, {dist: distAmager, name:this.amager.name, address:this.amager.address}];
 
     this.storeArray.sort(function(a,b) { // Her sorteres listen.
         return a.dist - b.dist;
       });
 
-    this.nearestStore = this.storeArray[0].name;
+    this.nearestStore = this.storeArray[0].name + "\n" +'på addressen:' + "\n" + this.storeArray[0].address;
     
     console.log('Tætteste butik:'+this.storeArray[0].name);
     console.log('Tætteste tal på butik:'+this.storeArray[0].dist);
