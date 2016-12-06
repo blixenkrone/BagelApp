@@ -18,6 +18,8 @@ export class LocationPage implements OnInit{
   public roskilde: StoreLocation = new StoreLocation("Bagel Roskilde", "Trekroner st. 4", 55.650107, 12.131997, null);
   public valby: StoreLocation = new StoreLocation("Bagel Valby", "Valby Langgade 12", 55.668071, 12.497865, null);
   public kbhK: StoreLocation = new StoreLocation("Indre København", "Axeltorv 5, 1609 København V", 55.6887527, 12.5404156, null);
+  public nørrebro: StoreLocation = new StoreLocation("Nørrebro", "Nørrebrogade 154, 2200 København N", 55.698415, 12.542681, null);
+  public amager: StoreLocation = new StoreLocation("Amager", "Amager Blvd. 144, 2450 Amager", 55.667923, 12.585762, null);
 
   constructor(public navCtrl: NavController, public locationTracker: LocationTracker) {
   }
@@ -36,7 +38,7 @@ export class LocationPage implements OnInit{
     this.usrStoreLong = this.locationTracker.lng;
 
     
-    if(this.locationTracker.lat != null){
+    if(this.locationTracker.lat != null || this.locationTracker.lat != undefined){
     console.log('Tracker nu!');
     console.log('person lokation lat:' + this.usrStoreLat);
     console.log('person lokation long:' + this.usrStoreLong);
@@ -47,20 +49,26 @@ export class LocationPage implements OnInit{
 
   public calculateDist (){
 
-    var distRoskilde  = ((this.usrStoreLat-this.roskilde.lat)+(this.usrStoreLong-this.roskilde.long));
-    var distValby     = ((this.usrStoreLat-this.valby.lat)+(this.usrStoreLong-this.valby.long));
-    var distKbhK      = ((this.usrStoreLat-this.kbhK.lat)+(this.usrStoreLong-this.kbhK.long));
+    var distRoskilde  = (Math.abs(this.usrStoreLat-this.roskilde.lat)+Math.abs(this.usrStoreLong-this.roskilde.long));
+    var distValby     = (Math.abs(this.usrStoreLat-this.valby.lat)+Math.abs(this.usrStoreLong-this.valby.long));
+    var distKbhK      = (Math.abs(this.usrStoreLat-this.kbhK.lat)+Math.abs(this.usrStoreLong-this.kbhK.long));
+    var distNorrebro  = (Math.abs(this.usrStoreLat-this.nørrebro.lat)+Math.abs(this.usrStoreLong-this.nørrebro.long));
+    var distAmager    = (Math.abs(this.usrStoreLat-this.amager.lat)+Math.abs(this.usrStoreLong-this.amager.long));
     
-    this.storeArray = [{dist: distRoskilde, name: this.roskilde.name}, {dist: distValby, name: this.valby.name}, {dist: distKbhK, name:this.kbhK.name}];
-    // this.storeArray.sort();
+    this.storeArray = [{dist: distRoskilde, name: this.roskilde.name, address:this.roskilde.address}, {dist: distValby, name: this.valby.name, address:this.valby.address}, 
+    {dist: distKbhK, name:this.kbhK.name, address:this.kbhK.address}, {dist: distNorrebro, name:this.nørrebro.name, address:this.nørrebro.address}, {dist: distAmager, name:this.amager.name, address:this.amager.address}];
 
     this.storeArray.sort(function(a,b) { // Her sorteres listen.
         return a.dist - b.dist;
       });
 
-    console.log('se:'+this.storeArray[0].name);
-
-    this.nearestStore = this.storeArray[0].name;
+    this.nearestStore = this.storeArray[0].name + "\n" +'på addressen:' + "\n" + this.storeArray[0].address;
+    
+    console.log('Tætteste butik:'+this.storeArray[0].name);
+    console.log('Tætteste tal på butik:'+this.storeArray[0].dist);
+    console.log('Næsttætteste butik:'+this.storeArray[1].name);
+    console.log('Næsttætteste butik:'+this.storeArray[1].dist);
+    
   }
 
   stop(){

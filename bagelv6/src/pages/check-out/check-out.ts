@@ -10,7 +10,8 @@ import { TotalBagel } from '../../providers/totalbagel';
 
 export class CheckOut {
 
-  constructor(public cart: Cart, public totalBagel: TotalBagel){ }
+  constructor(public cart: Cart, public totalBagel: TotalBagel){ 
+  }
 
   removeBagel(idx: number){
     this.cart.checkOutBagels.splice(idx, 1);
