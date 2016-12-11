@@ -10,12 +10,13 @@ import { Drink } from '../../providers/drink'
 })
 
 export class PickDrinks {
-
   public Cola: Drink = new Drink("Coca-cola", 18);
   public Fanta: Drink = new Drink("Fanta", 18);
   public Sprite: Drink = new Drink("Sprite", 18);
 
-  constructor(public cart: Cart, public navCtrl: NavController) { }
+  constructor(public cart: Cart, public navCtrl: NavController) { 
+
+  }
 
   getCola() {
     this.cart.add(this.Cola);
@@ -37,5 +38,4 @@ export class PickDrinks {
     this.cart.checkOutDrinks.splice(idx, 1);
     this.cart.totalPrice -= 18;
   }
-
 }

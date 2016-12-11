@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-// import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 
@@ -10,10 +9,7 @@ export class Drink {
   pris: number;
 
   constructor(name: string, pris: number) {
-
     this.name = name;
     this.pris = pris;
-    
   }
-
 }
