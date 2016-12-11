@@ -35,7 +35,7 @@ export class PickDrinks {
 
   removeDrink(idx: number){
     this.cart.checkOutDrinks.splice(idx, 1);
-    this.cart.totalPrice -= this.Cola.pris; //Her snyder vi?
+    this.cart.totalPrice -= 18;
   }
 
 }

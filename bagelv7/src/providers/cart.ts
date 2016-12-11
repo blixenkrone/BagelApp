@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-// import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 import { Drink } from './drink';
@@ -10,12 +9,10 @@ export class Cart {
 
   checkOutBagels: Array<Object> = [];
   checkOutDrinks: Array<Object> = [];
-
+  bagelPrices: Array<number> = [];
   totalPrice: number;
 
-  bagelPrices: Array<number> = [];
-
-  constructor(public totalbagel: TotalBagel) {
+  constructor(public totalbagel:TotalBagel) {
     this.totalPrice = 0;
   }
 
