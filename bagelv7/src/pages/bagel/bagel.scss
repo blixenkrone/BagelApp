@@ -1,0 +1,203 @@
+page-bagel {
+    -ms-scroll-limit-y-max: 100%;
+}
+
+.upperScreen{
+    height: 50%;
+    position: static;
+    text-align: center;
+    margin-bottom: 1em;
+    z-index: 1;
+}
+
+.lowerScreen{
+    background: white;
+    height: 50%;
+    position: static;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.overBolleFilling{
+    width: 20em;
+    height: 2.5em;
+    position:relative;
+    z-index: 7;
+    font-size: 1.6rem;
+}  
+
+.salatFilling{
+    width: 20em;
+    height: 1.5em;
+    position:relative;
+    z-index: 6;
+    font-size: 1.6rem;
+}
+.agurkFilling{
+    width: 20em;
+    height: 1.5em;
+    position:relative;
+    z-index: 5;
+    font-size: 1.6rem;
+}
+.tomatFilling{
+    width: 20em;
+    height: 1.5em;
+    position:relative;
+    z-index: 3;
+    font-size: 1.6rem;
+}
+.jalaFilling{
+    width: 20em;
+    height: 1em;
+    position:relative;
+    z-index: 4;
+    font-size: 1.6rem;
+}
+
+.pålægFilling{
+    position: relative;
+    width: 20em;
+    height: 1.5em;
+    z-index:2;
+    font-size: 1.6rem;
+}
+
+.ccFilling{
+    position:relative;
+    width: 20em;
+    height: 1.5em;
+    z-index:1;
+    font-size: 1.6rem;
+}
+
+.underBolleFilling{
+    width: 20em;
+    height: 2.5em;
+    top:3%;
+    position:relative;
+    z-index: 1;
+    font-size: 1.6rem;
+}  
+
+.button{
+    background: orange;
+    align-content: center;
+    border: 1px solid black;
+    margin: auto;
+    //width: 100%;
+    color: white;
+    font-style: italic; 
+    font-size: 15px;
+}
+
+.Fjern{
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 2px;
+    cursor: pointer;
+    float: right;
+    border: 1px solid black;
+    width: 48%;
+   // margin: 2px 5px;
+}
+
+.Bekræft{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 2px;
+    cursor: pointer; 
+    float: left; 
+    border: 1px solid black;
+    width: 48%;   
+}
+
+.left{
+    background-color: orange;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 2px;
+    cursor: pointer;
+    //float: left;
+    border: 1px solid black;
+    width: 48%;
+    height: 95px;
+    margin: 4px 2px;
+    background-image: url ("images/underbolle.png");
+    
+}
+
+.right{
+    background-color: orange;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 2px;
+    cursor: pointer;
+    //float: right;
+    border: 1px solid black;
+    width: 48%;
+    height: 95px;
+    margin: 4px 2px;
+}
+
+.button-1{
+    background: orange;
+    align-content: center;
+    border: 1px solid black;
+    margin: auto;
+    //width: 100%;
+    color: white;
+    font-style: italic; 
+    font-size: 15px;
+    margin: 6px 2px;
+
+}
+.button-10{
+    background: greenyellow;
+    align-content: center;
+    border: 1px solid black;
+    margin: auto;
+    //width: 100%;
+    margin: 6px 2px;   
+}
+
+.button-11{
+     background: green;
+    align-content: center;
+    border: 1px solid black;
+    margin: auto;
+    //width: 100%;
+    margin: 6px 2px;  
+}
+
+.button-12{
+    background: red;
+    align-content: center;
+    border: 1px solid black;
+    margin: auto;
+    //width: 100%;
+    margin: 6px 2px;   
+}
+
+.button-13{ 
+    background: olivedrab;
+    align-content: center;
+    border: 1px solid black;
+    margin: auto;
+    //width: 100%;
+    margin: 6px 2px;
+}
