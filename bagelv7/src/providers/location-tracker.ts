@@ -10,11 +10,10 @@ export class LocationTracker {
   public lng: any;
 
   constructor(public zone: NgZone) {
-
   }
 
   startTracking() {
-
+    
   	// Background Tracking
 
     let config = {
@@ -27,9 +26,7 @@ export class LocationTracker {
 
     BackgroundGeolocation.configure((location) => {
 
-		// console.log('BackgroundGeolocation:  ' + location.latitude + ',' + location.longitude);
-
-		// Run update inside of Angular's zone
+		// Kør update inden i Angular's zone
 		this.zone.run(() => {
 			this.lat = location.latitude;
 			this.lng = location.longitude;
@@ -44,9 +41,7 @@ export class LocationTracker {
     // Turn ON the background-geolocation system.
     BackgroundGeolocation.start();
 
-
-    // Foreground Tracking
-
+    // Forgrunds Tracking
 	let options = {
 		frequency: 3000, 
 		enableHighAccuracy: true
@@ -54,14 +49,10 @@ export class LocationTracker {
 
 	this.watch = Geolocation.watchPosition(options).filter((p: any) => p.code === undefined).subscribe((position: Geoposition) => {
 
-		// console.log('position:' + position);
-
-		// Run update inside of Angular's zone
+		// Kør update inden i Angular's zone
 		this.zone.run(() => {
 			this.lat = position.coords.latitude;
 			this.lng = position.coords.longitude;
-      // console.log('latitude:' + this.lat);
-      // console.log('longitude:' + this.lng);
 		});
 
 	});
@@ -69,12 +60,9 @@ export class LocationTracker {
  
 
   stopTracking() {
-
-    console.log('stopTracking');
-
+    console.log('Stop Tracking');
     BackgroundGeolocation.finish();
     this.watch.unsubscribe();
-
   }
 }
 

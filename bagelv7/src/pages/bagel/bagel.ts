@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
 import { HomePage } from '../home/home';
-
 import { TotalBagel } from '../../providers/totalbagel';
 import { Filling } from '../../providers/filling';
 import { Cart } from '../../providers/cart';
