@@ -23,5 +23,4 @@ export class Cart {
     this.totalPrice += drinks.pris;
     this.checkOutDrinks.push(drinks);
   }
-
 }

@@ -7,12 +7,10 @@
 </ion-header>
 
 <ion-content>
-	<h4>Current Latitude: {{locationTracker.lat}}</h4>
-	<h4>Current Longitude: {{locationTracker.lng}}</h4>
-	<!--<p *ngFor="let storeArray of Location">-->
+	<h4>Nuværende Enheds Latitude: {{locationTracker.lat}}</h4>
+	<h4>Nuværende Enheds Longitude: {{locationTracker.lng}}</h4>
+	<!--Tætteste butik fra TypeScript filen-->
 	<h3>Tætteste butik: {{nearestStore}} </h3>
-	<button ion-button full primary (click)="start()">Find nærmeste butik</button>
+	<button ion-button full primary (click)="start()">Find nærmeste Bagel-butik</button>
 	<button ion-button full primary (click)="stop()">Stop Tracking</button>
-
-
 </ion-content>

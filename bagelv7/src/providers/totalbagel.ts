@@ -7,7 +7,7 @@ import { Filling } from './filling';
 @Injectable()
 export class TotalBagel {
 
-  totalBagelList: Array<Object> = [];
+  chosenFillings: Array<Object> = [];
   totalPrice: number;
 
   constructor() {
@@ -16,7 +16,7 @@ export class TotalBagel {
 
   add(filling : Filling) {
     this.totalPrice += filling.price;
-    this.totalBagelList.push(filling);
+    this.chosenFillings.push(filling);
   }
 }
 

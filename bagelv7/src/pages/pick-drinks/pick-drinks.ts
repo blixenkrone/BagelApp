@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { HomePage } from '../home/home';
-
 import { Cart } from '../../providers/cart';
 import { Drink } from '../../providers/drink'
 
@@ -36,7 +35,7 @@ export class PickDrinks {
 
   removeDrink(idx: number){
     this.cart.checkOutDrinks.splice(idx, 1);
-    this.cart.totalPrice -= this.Cola.pris; // HER SNYDER VI!
+    this.cart.totalPrice -= this.Cola.pris; //Her snyder vi?
   }
 
 }

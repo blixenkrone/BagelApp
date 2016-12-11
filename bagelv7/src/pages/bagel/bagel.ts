@@ -205,10 +205,10 @@ export class Bagel {
 
   // ________Fortyrd_________
   regretChoice() {
-      if(this.totalBagel.totalBagelList.length > 0){
+      if(this.totalBagel.chosenFillings.length > 0){
           this.totalBagel.totalPrice = 0;
-            while(this.totalBagel.totalBagelList.length > 0){
-                this.totalBagel.totalBagelList.pop();
+            while(this.totalBagel.chosenFillings.length > 0){
+                this.totalBagel.chosenFillings.pop();
             }
       this.animateBread = "hidden";
       this.animateDressing = "hidden";
@@ -233,7 +233,6 @@ export class Bagel {
       }
   }
 
-
   // ________Bekræft_________  
 
   public tempTotalBagel = new TotalBagel();
@@ -241,8 +240,8 @@ export class Bagel {
   confirmChoice(){
       this.tempTotalBagel.totalPrice = this.totalBagel.totalPrice;
 
-      while (this.totalBagel.totalBagelList.length > 0){
-          this.tempTotalBagel.totalBagelList.push(this.totalBagel.totalBagelList.pop());
+      while (this.totalBagel.chosenFillings.length > 0){
+          this.tempTotalBagel.chosenFillings.push(this.totalBagel.chosenFillings.pop());
       }
 
         this.cart.bagelPrices.push(this.tempTotalBagel.totalPrice);
