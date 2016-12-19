@@ -61,8 +61,12 @@ export class LocationPage implements OnInit{
 
     //Alle butik's-parametre som objekter (distance, navn, adresse)
     
-    this.storeArray = [{dist: distRoskilde, name: this.roskilde.name, address:this.roskilde.address}, {dist: distValby, name: this.valby.name, address:this.valby.address}, 
-    {dist: distKbhK, name:this.kbhK.name, address:this.kbhK.address}, {dist: distNorrebro, name:this.nørrebro.name, address:this.nørrebro.address}, {dist: distAmager, name:this.amager.name, address:this.amager.address}];
+    this.storeArray = [
+    {dist: distRoskilde, name: this.roskilde.name, address:this.roskilde.address}, 
+    {dist: distValby, name: this.valby.name, address:this.valby.address}, 
+    {dist: distKbhK, name:this.kbhK.name, address:this.kbhK.address}, 
+    {dist: distNorrebro, name:this.nørrebro.name, address:this.nørrebro.address}, 
+    {dist: distAmager, name:this.amager.name, address:this.amager.address}];
 
     this.storeArray.sort(function(a,b) { // Her sorteres listen.
         return a.dist - b.dist;
