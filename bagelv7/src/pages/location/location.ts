@@ -38,8 +38,7 @@ export class LocationPage implements OnInit{
   	this.locationTracker.startTracking();
     this.usrStoreLat = this.locationTracker.lat;
     this.usrStoreLong = this.locationTracker.lng;
-
-    
+      
     if(this.locationTracker.lat != null){
     console.log('Tracker nu!');
     console.log('person lokation lat:' + this.usrStoreLat);
@@ -79,7 +78,7 @@ export class LocationPage implements OnInit{
     console.log('Tætteste butik:'+this.storeArray[0].name);
     console.log('Tætteste tal på butik:'+this.storeArray[0].dist);
     console.log('Næsttætteste butik:'+this.storeArray[1].name);
-    console.log('Næsttætteste butik:'+this.storeArray[1].dist);
+    console.log('Næsttætteste tal på butik:'+this.storeArray[1].dist);
     
   }
 
